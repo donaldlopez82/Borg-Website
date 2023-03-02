@@ -1,0 +1,280 @@
+/* Common Styles for all pages of Unimatrix Zero Island Resort and Spa Web site */
+/* Note: Refer to grading sheet for details on each of these sections */
+
+/* CSS Final Project by Donald Lopez <----  YOUR NAME HERE */
+
+@font-face {
+    font-family: Starfleet_2;
+    src: url('images/Starfleet.ttf');
+}
+@font-face {
+    font-family: Stardate81316-aolE;
+    src: url('images/Stardate.ttf');
+}
+
+/* First rule below should probably be left alone. */
+
+header, nav, section, footer, article {     /* leave this alone */
+	display: block;
+}
+
+
+/* 1. Page Styles: On the "body" you must at least set color, background, margin, padding, font family & size.    
+   ==============  Optionally, you can also set styles on the page wrapper div here if you like.  
+	               But note that you will lose points for any of the above properties that are not set for the body  */
+
+Body {
+    background:
+    url(images/locutus.png)no-repeat,
+    url(images/sevenofnine.png)no-repeat,
+    url(images/Black.jpg);
+    background-position: left;
+    color: #FFFFFF;
+    max-width: 1000px;
+    max-height: 1500px;
+	font-family: borg, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: -20px 10%;
+	padding: 50px;
+}
+#pagewrap {	
+    max-width: 1000px;
+	width: 900px;
+    height: 1400px;
+	margin-left: 125px;
+	margin-right: auto;
+	background: url(images/borgcube.jpg)fixed;
+}
+
+	                
+
+/* 2. Header (Banner) Styles: For the top header area (which includes the h1) and should be treated as a banner area. 
+   =========================  Possible properties to use here include "background", "height", "padding", "margin",     
+                              and "border".  Feel free to use others instead. Use at least 2 properties.           */
+header {
+    background:url(images/greenspace.jpg)no-repeat;
+	color: #000000;
+    border: solid;
+    border-width: 15px;
+    border-color: darkslategray;
+	padding: 4em 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+                    
+
+
+
+/* 3. Heading Styles: For h1-h3 together, set font-family and color; for each separately set font-size using em or %.   
+   =================  Set other styles as needed. Goal is to make heading text stand out from other page text.   
+	                  Use text-shadowing on your headings. One of your heading fonts must be an embedded Web font.  */
+h1,h2,h3 {
+	font-family: Georgia,"Times New Roman", Times, serif;
+    font-size: 220%;
+    text-decoration: underline;
+    text-shadow: 2px 4px 7px rgba(11, 222, 23, .7);
+	margin-bottom: 0;
+    color: rgb(12, 12, 12);
+}
+h1 {
+   font-size: 300%;
+   font-weight: bolder;
+}
+h2{
+   font-size: 225%;
+   text-align: center;
+   border: solid;
+   border-width: 3px;
+   background-color: darkslategray;
+}
+h3{
+   font-size: 185%;
+   text-align: center;
+   border: none;
+   background-color: darkslategray;
+        
+}
+
+/* 4. Intro Paragraph Styles:  use at least 1 property to emphasize 1st paragraph (intro article) 
+   =========================   */
+#intro {
+    font-family: Georgia,"Times New Roman", Times, serif;
+    font-style: italic;
+    text-align: center;
+}             
+/* 5. Copyright Styles:  use at least 2 properties to de-emphasize the copyright paragraph (footer)  
+   ===================  */
+
+footer {
+    font-family: Georgia,"Times New Roman", Times, serif;
+	margin-top: 99em;
+	text-align: center;
+	font-size: 70%;
+	clear: left;
+    color: white;
+}
+
+/* 6. General Link Styles: Style the links outside the nav bar area using at least color and text-decoration  
+   ======================  Write 4 separate rules to affect all 4 link states.  */
+
+
+a:link{
+    color:red;
+    text-decoration: none;
+}
+a:visited {
+    color: chartreuse;
+}
+a:hover{
+    color: azure;
+}
+a:active{
+    opacity: .05;
+}
+
+
+/* 7. Navigation Bar Styles: Should affect only the nav bar links. Style nav, ul and its li's as needed.           
+   ========================  Style all 4 link states to make active buttons when hovering. Remove bullets from list display. 
+                             Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */ 
+nav a:link{
+    font-size: 50%;
+    color:red;
+    text-decoration: none;
+}
+nav a:visited {
+     color: chartreuse;
+}
+nav a:hover{
+    opacity: .05;
+}
+nav a:active{
+    color: azure;
+}
+nav {
+    width: 200px;
+	float: left;
+	background: #000000;
+	padding-top: .1em;
+}
+nav ul {
+	list-style-type: none;
+	line-height: 2px;
+	padding-left: 10px;
+    list-style-image: none;
+    position: relative;
+}
+nav li {
+	margin-top: .5em;
+	font-size: 200%;
+	background: url(images/redlazer.jpg) fixed;
+    background-size: 1000px;
+    background-position: left;
+	text-align: center;
+    font-weight: 100;
+    padding: 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+nav a {                       
+	text-decoration: none;
+}
+#homepage {
+    
+}
+#homelink {
+    
+}
+
+
+
+/* 8. General List Styles: For unordered lists outside of nav bar. Set 2 levels of bullet shapes & 2 levels of bullet images. 
+   ======================  Outer bullets should stand out more than inner bullets. Use Reservations & Contact pages to test. */
+
+
+ul{
+  list-style-image: url(images/bullet1.png);  
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ul ul {
+   list-style-image: url(images/bullet2.png);  
+  list-style-type: circle;
+  list-style-position: inside;  
+}
+
+
+/* 9. Testimonial Styles: At least 4 rules to style at least these 4 items: the surrounding testimonials article,    
+   =====================  the 3 testimonial divs, the quotes, and the speakers. Goals: Uniquely style testimonial section 
+	                       itself, emphasize quote, de-emphasize speaker name. Adjust vertical spacing between items.       */
+#testimonials{
+    border: ridge;
+    border-width: 7px;
+    border-color: slategray;
+    font-family: Georgia,"Times New Roman", Times, serif;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.testimonial{
+    text-shadow: 2px 4px 7px rgba(11, 222, 23, .7);   
+}
+.quote{
+    font-weight: bold;
+    text-align: center;
+}
+
+.speaker{
+    opacity: .7
+}
+/* 10. Logo Positioning Styles: Absolute Positioning of logo image using "positionme" id. Leave the existing blank div at 
+   ===========================  bottom of each page in the html & style it to go toward the top of pages where you like.  
+	                            Give it a height & width to match logo image, set image as background, osition absolutely */
+
+#positionme{
+    background-image: url(images/borglogo.png);
+    width: 100px;
+    height: 213px;
+    position: absolute;
+    top: 115px;
+    right: 9%;   
+}
+/* 11. Multi-Column Layout Styles: Use of float, position, margin, and/or padding styles to create a multi-column layout.  
+   ==============================  For help with these styles, see the online "Final Project Layout Guide" handout.     
+	                               For some partial credit here you can use just the layout styles from A3P5              */
+
+#main {  
+	width: 690px;
+    height: 1100px;
+	float: right;
+    background: url(images/borgtech.jpeg)repeat;
+}
+#main  {                
+	margin-left: .5em;
+}
+#testimonials {
+    position: absolute;
+    top: 500px;
+    right: 45px;
+    width: 15%;
+}
+/* Miscellaneous Styles: Styles that don't fit in any of the above categories but affect multiple pages can go here. 
+   ====================  Use only as needed. This section is optional and does not count for any points.                 */
+                               /* change background, adjust width as needed */
+
+#hotelfig {  
+    border: outset;
+    border-width: 4px;
+    border-color: lawngreen;
+    margin-left: 35px;
+	float: right;
+}
+figcaption {
+    text-align: center;
+    font-size: 85%;
+    font-weight: 600
+}
+.headingtext {
+    font-family: Starfleet_2;
+}
