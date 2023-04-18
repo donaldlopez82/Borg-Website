@@ -38,10 +38,9 @@ Body {
 	padding: 50px;
 }
 #pagewrap {	
-    max-width: 1000px;
-	width: 900px;
-    height: 1400px;
-	margin-left: 125px;
+	width: 100%;
+    height: auto;
+    margin-left: auto;
 	margin-right: auto;
 	background: url(images/borgcube.jpg)fixed;
 }
@@ -138,7 +137,7 @@ a:active{
                              Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */ 
 nav a:link{
     font-size: 50%;
-    color:red;
+    color:rgb(255, 255, 255,);
     text-decoration: none;
 }
 nav a:visited {
@@ -213,8 +212,6 @@ ul ul {
     border-color: slategray;
     font-family: Georgia,"Times New Roman", Times, serif;
     padding: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
 }
 .testimonial{
@@ -245,8 +242,8 @@ ul ul {
 	                               For some partial credit here you can use just the layout styles from A3P5              */
 
 #main {  
-	width: 690px;
-    height: 1100px;
+	width: 100%;
+    height: auto;
 	float: right;
     background: url(images/borgtech.jpeg)repeat;
 }
